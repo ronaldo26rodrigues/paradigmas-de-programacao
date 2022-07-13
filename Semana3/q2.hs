@@ -69,7 +69,7 @@ contaVotos n c lista | n == 0 && indiceLista == c = estados 1
                      where indiceLista = (lista !! n)
 
 votos :: (Char, Char, Char, Char, Char, Char, Char, Char, Char, Char) -> Char
-votos (a, b, c, d, e, f, g, h, i, j) | contaVotos 9 'A' mapa > contaVotos 9 'B' mapa = 'A'
+votos (a, b, c, d, e, f, g, h, i, j) | contar 'A' > contar 'B' = 'A'
                                      | otherwise = 'B'
                                      where contar c = contaVotos 9 c mapa
                                            mapa = [a, b, c, d, e, f, g, h, i, j]
