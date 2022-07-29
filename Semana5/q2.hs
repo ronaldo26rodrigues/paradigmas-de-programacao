@@ -58,8 +58,5 @@ contaFromIgual :: String -> Transacao -> Bool
 contaFromIgual c (Transacao _ f _) = c == f
 
 medias :: Maybe Bloco -> String -> (Float, Float)
-medias b c = (somarLista (filtro (contaDeIgual c)) / fromIntegral (length (filtro (contaDeIgual c))), somarLista (filtro (contaFromIgual c)) / fromIntegral (length (filtro (contaFromIgual c))))
-            where filtro x = filter x (juntarListas b)
-
-
-
+medias b c = (media (contaDeIgual c), media (contaFromIgual c))
+            where media x = somarLista (filter x (juntarListas b)) / fromIntegral (length (filter x (juntarListas b)))
