@@ -30,4 +30,3 @@ mostraPessoa (Adulto n c i as) = n ++ ", " ++ c ++ ", " ++ show i ++ ", " ++ sho
 
 
 
-

@@ -1,0 +1,10 @@
+Ronaldo;20;true;false
+Gabriel;40;true;true
+Vicente;50;false;true
+Marissol;56;true;true
+Steffano;12;false;false
+Lucas;57;false;false
+Joyce;23;true;true
+Joao;72;true;false
+Apolo;43;false;false
+July;20;true;true
